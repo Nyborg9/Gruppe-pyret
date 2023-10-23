@@ -1,0 +1,131 @@
+scene = rectangle(330, 120,"solid","white")
+#This creates a rectangle we can use as a background with a defined width and height 
+pin = circle(6,"solid","brown")
+#This creates a circle we use as the hanoi pins
+small-disc = circle(12,"outline","red")
+#This creates the smallest disc
+medium-disc = circle(18,"outline","blue")
+#This creates the next disc
+large-disc = circle(24,"outline","orange")
+#This circle is the second largest disc
+giant-disc = circle(30,"outline","purple")
+#This creates the largest disc
+
+pins = overlay-xy(pin,-240,-60,
+  #overlay-xy is a command that takes two elements and a cordinate to overlay the first element upon the other
+  overlay-xy(pin,-140,-60,
+    overlay-xy(pin,-40, -60, scene)))
+#We used 3 overlay-xy comands to put three pins on the scene background
+
+start = overlay-xy(small-disc,-34,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -22, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Here we used overlay-xy to put all the discs over the first hanoi pin, when you write start in the console the hanoi tower scene will start
+ 
+move1 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -22, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Move1 uses the same overlay as start, but the cordinates of the small disc is changed to move the object -Write move1 in the console to change the screen to show the first move
+
+move2 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -22, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move3 = overlay-xy(small-disc,-234,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -22, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move4 = overlay-xy(small-disc,-234,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move5 = overlay-xy(small-disc,-34,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move6 = overlay-xy(small-disc,-34,-54,
+  overlay-xy(medium-disc, -128, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move7 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -128, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -16, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move8 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -128, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move9 = overlay-xy(small-disc,-234,-54,
+  overlay-xy(medium-disc, -128, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move10 = overlay-xy(small-disc,-234,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move11 = overlay-xy(small-disc,-34,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -122, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move12 = overlay-xy(small-disc,-34,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -222, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move13 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -28, -48,
+    overlay-xy(large-disc, -222, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move14 = overlay-xy(small-disc,-134,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -222, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+
+move15 = overlay-xy(small-disc,-234,-54,
+  overlay-xy(medium-disc, -228, -48,
+    overlay-xy(large-disc, -222, -42,
+      overlay-xy(giant-disc, -216, -36, pins))))
+#Further change to coordinates to make the discs move
+print(start)
+print(move1)
+print(move2)
+print(move3)
+print(move4)
+print(move5)
+print(move6)
+print(move7)
+print(move8)
+print(move9)
+print(move10)
+print(move11)
+print(move12)
+print(move13)
+print(move14)
+print(move15)
+#Prints all the moves
