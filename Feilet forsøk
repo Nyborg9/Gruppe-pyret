@@ -1,0 +1,15 @@
+scene = rectangle(22 * 15, 8 * 15,"solid","black")
+pin = circle(6,"solid","brown")
+small-disc = circle(12,"outline","red")
+medium-disc = circle(18,"outline","blue")
+large-disc = circle(24,"outline","orange")
+giant-disc = circle(30,"outline","purple")
+
+right-pin = overlay-xy(pin,-240,-4 * 15,scene)
+center-pin = overlay-xy(pin,-140,-4 * 15,right-pin)
+left-pin = overlay-xy(pin,-40,-4 * 15,center-pin)
+
+start-disc = overlay-align("pinhole","pinhole",small-disc,left-pin)
+start-disc2 = overlay-align("pinhole","pinhole",medium-disc,start-disc)
+start-disc3 = overlay-align("pinhole","pinhole",large-disc,start-disc2)
+start-disc4 = overlay-align("pinhole","pinhole",giant-disc,start-disc3)
